@@ -1,7 +1,9 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
+        try{ 
         //Classe Scanner declarada
         Scanner sc = new Scanner(System.in);
         
@@ -26,5 +28,10 @@ public class ContaTerminal {
 
         System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é "
          + agencia + ", conta " + numero + " e seu saldo " + saldo +" já está disponível para saque.");
+        }
+        catch(InputMismatchException e) {
+            System.out.println("O campos numero da conta e o saldo precisam ser numericos! ");
+        }
+        
     }
 }   
