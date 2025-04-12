@@ -30,7 +30,7 @@ public class ContaTerminal {
          + agencia + ", conta " + numero + " e seu saldo " + saldo +" já está disponível para saque.");
         }
         catch(InputMismatchException e) {
-            System.out.println("O campos numero da conta e o saldo precisam ser numericos! ");
+            System.out.println("O campos número da conta e saldo, precisam ser númericos!");
         }
         
     }
